@@ -22,7 +22,7 @@ console.log(numberVocals(word));
 // Esercizio con arrow function
 const numberVocals2 = (str) => {
     let count2 = 0;
-    for (let i = 0; i > str.length; i++) {
+    for (let i = 0; i < str.length; i++) {
         if (str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u') {
             count2++;
         }
