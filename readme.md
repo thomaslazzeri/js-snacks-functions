@@ -1,0 +1,1 @@
+Creazione di un esercizio con function e arrow function.
