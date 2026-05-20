@@ -14,6 +14,6 @@ console.log(greetings(userName));
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
 
-// Esercizi con arrow function
+// Esercizio con arrow function
 const greetings = (name) => `Ciao ${name}`;
 console.log(greetings(userName));
