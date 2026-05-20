@@ -4,10 +4,31 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
+function filterLetter(arr, letter) {
+    const filterNames = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i][0] === letter) {
+            filterNames.push(arr[i]);
+        }
+    }
+    return filterNames;
+}
+console.log(filterLetter(names, "A"));
 
 // Invoca la funzione qui e stampa il risultato in console
 
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
+
+// Esercizio con arrow function
+const filterLetter2 = (arr, letter) => {
+    const filterNames2 = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i][0] === letter) {
+            filterNames2.push(arr[i]);
+        }
+    }
+    return filterNames2;
+}
+console.log(filterLetter2(names, "A"));
