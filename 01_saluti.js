@@ -2,12 +2,18 @@
 
 const userName = 'Mario';
 
-
 // Dichiara la funzione qui.
-
+function greetings(name) {
+    return `Ciao ${name}`;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
+console.log(greetings(userName));
 
 
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
+
+// Esercizi con arrow function
+const greetings = (name) => `Ciao ${name}`;
+console.log(greetings(userName));
