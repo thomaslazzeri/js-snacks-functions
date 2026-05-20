@@ -4,10 +4,26 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
+function initials(arr) {
+    const firstLetters = [];
+    for (let i = 0; i < arr.length; i++) {
+        firstLetters.push(arr[i][0]);
+    }
+    return firstLetters;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
-
+console.log(initials(names));
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+
+// Esercizio con arrow function
+const initials2 = (arr) => {
+    const firstLetters2 = [];
+    for (let i = 0; i < arr.length; i++) {
+        firstLetters2.push(arr[i][0]);
+    }
+    return firstLetters2;
+};
+console.log(initials2(names));
