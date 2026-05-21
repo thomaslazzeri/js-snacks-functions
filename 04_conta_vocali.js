@@ -5,13 +5,13 @@ const word = 'javascript';
 
 // Dichiara la funzione qui.
 function numberVocals(str) {
-    let count = 0;
+    const vowels = [];
     for (let i = 0; i < str.length; i++) {
         if (str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u') {
-            count++;
+            vowels.push(str[i]);
         }
     }
-    return count;
+    return vowels;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
