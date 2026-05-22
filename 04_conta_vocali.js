@@ -5,9 +5,11 @@ const word = 'javascript';
 
 // Dichiara la funzione qui.
 function numberVocals(str) {
+    let count = 0;
     const vowels = [];
     for (let i = 0; i < str.length; i++) {
         if (str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u') {
+            count++;
             vowels.push(str[i]);
         }
     }
@@ -22,11 +24,13 @@ console.log(numberVocals(word));
 // Esercizio con arrow function
 const numberVocals2 = (str) => {
     let count2 = 0;
+    const vowels = [];
     for (let i = 0; i < str.length; i++) {
         if (str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u') {
             count2++;
+            vowels.push(str[i]);
         }
     }
-    return count2;
+    return vowels;
 }
 console.log(numberVocals2(word));
